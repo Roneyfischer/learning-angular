@@ -1,0 +1,10 @@
+<div class="divClass">
+  <p>list-render works!</p>
+  <ul>
+    <li *ngFor="let user of users">
+      Nome: {{ user.userName }} - Type: {{ user.type }}
+    </li>
+  </ul>
+  <button (click)="exibeUsers()">CLIQUEE</button>
+</div>
+

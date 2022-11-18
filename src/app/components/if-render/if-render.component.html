@@ -1,0 +1,11 @@
+<div class="divClass">
+  <p>if-render works!</p>
+  <div class="userAuthenticated" *ngIf="canShow">
+    <h1 *ngIf="pass == '0123'; else passNotMatch">
+      <p>O IF é verdadeiro, e a variável em questão é: {{ pass }}</p>
+    </h1>
+    <ng-template #passNotMatch>
+      <h2>A senha não confere!</h2>
+    </ng-template>
+  </div>
+</div>

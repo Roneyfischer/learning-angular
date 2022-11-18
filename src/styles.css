@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  /* background-color: whitesmoke; */
+}
+
+a {
+  color: blue;
+}
+
+.title {
+  background-color: blue;
+}
+
+button {
+  background-color: aliceblue;
+  padding: 10px;
+  color: black;
+}
+
+body {
+  padding-bottom: 500px;
+}
+
+.divClass{
+  border-bottom: 1px solid red;
+  padding: 2em;;
+  margin-bottom: 1em;
+}
