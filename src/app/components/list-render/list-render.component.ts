@@ -33,9 +33,9 @@ export class ListRenderComponent {
     },
   ];
 
-userDetails = ''
-  showGroup(user: User){
-    this.userDetails = `O grupo do usuário é ${user.group}, e o cpf é ${user.cpf}`
+  userDetails = '';
+  showGroup(user: User): void {
+    this.userDetails = `O grupo do usuário é ${user.group}, e o cpf é ${user.cpf}`;
   }
   exibeUsers() {
     this.usersOutput.emit();

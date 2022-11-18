@@ -1,11 +1,11 @@
 <div class="divClass">
   <p>list-render works!</p>
   <ul>
+    <h4>{{ userDetails }}</h4>
     <li *ngFor="let user of users">
       Nome: {{ user.completeName }} - Role: {{ user.role }}
 
-      <button (click)="showGroup(user)">CLIQUEE</button>
+      <button (click)="showGroup(user)">Ver detalhes</button>
     </li>
-    <h3>{{ userDetails }}</h3>
   </ul>
 </div>
