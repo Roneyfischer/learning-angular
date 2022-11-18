@@ -1,11 +1,14 @@
-<div class="divClass">
-  <p>list-render works!</p>
-  <ul>
-    <h4>{{ userDetails }}</h4>
-    <li *ngFor="let user of users">
-      Nome: {{ user.completeName }} - Role: {{ user.role }}
+<p>list-render works!</p>
+<ul>
+  <h4>{{ userDetails }}</h4>
+  <button class="btn btn-primary" (click)="cleanShowGroup()">
+    Limpar detalhes
+  </button>
+  <li *ngFor="let user of users">
+    Nome: {{ user.completeName }} - Role: {{ user.role }}
 
-      <button (click)="showGroup(user)">Ver detalhes</button>
-    </li>
-  </ul>
-</div>
+    <button class="btn btn-primary button" (click)="executeShowGroup(user)">
+      Ver detalhes
+    </button>
+  </li>
+</ul>

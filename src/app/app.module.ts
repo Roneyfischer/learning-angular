@@ -13,6 +13,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { EventsComponent } from './components/events/events.component';
 import { LoginFormComponent } from './components/login-form/login-form.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
+import { PassagemDadosComponent } from './components/passagem-dados/passagem-dados.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
           ButtonComponent,
           EventsComponent,
           LoginFormComponent,
-          ListRenderComponent
+          ListRenderComponent,
+          PassagemDadosComponent
   ],
   imports: [
     BrowserModule,

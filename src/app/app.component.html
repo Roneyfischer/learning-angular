@@ -58,12 +58,23 @@
 </nav>
 
 <div class="divClass">
-  <h2>Lista / Array!</h2>
-  <p>A lista completa é:: {{ myNumber }}</p>
-  <app-list-render (usersOutput)="onUsersOutput()"></app-list-render>
+  <p>{{dataTextToShow}} {{dataReceivedShow}} </p>
 </div>
+<app-passagem-dados (dataOutput) = "dataSendReceived($event)"
+  ></app-passagem-dados
+>
 
-<div class="divClass">
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<h2>Lista / Array!</h2>
+<p>A lista completa é:: {{ myNumber }}</p>
+<app-list-render (usersOutput)="onUsersOutput()"></app-list-render>
+
+<div class="container">
   <h1>Welcome to Event-Manager!</h1>
   <p>This number is: {{ myNumber }}</p>
   <app-login-form (clickLoginButton)="onClickLoginButton()"></app-login-form>

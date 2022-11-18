@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "~bootstrap/dist/css/bootstrap.min.css";
 
 * {
   margin: 0;
@@ -16,18 +16,16 @@ a {
   background-color: blue;
 }
 
-button {
-  background-color: aliceblue;
-  padding: 10px;
-  color: black;
+.btn:hover {
+  background-color: rgb(42, 189, 52);
 }
 
 body {
   padding-bottom: 500px;
 }
 
-.divClass{
+.divClass {
   border-bottom: 1px solid red;
-  padding: 2em;;
+  padding: 2em;
   margin-bottom: 1em;
 }
