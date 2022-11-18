@@ -2,9 +2,10 @@
   <p>list-render works!</p>
   <ul>
     <li *ngFor="let user of users">
-      Nome: {{ user.userName }} - Type: {{ user.type }}
-    </li>
-  </ul>
-  <button (click)="exibeUsers()">CLIQUEE</button>
-</div>
+      Nome: {{ user.completeName }} - Role: {{ user.role }}
 
+      <button (click)="showGroup(user)">CLIQUEE</button>
+    </li>
+    <h3>{{ userDetails }}</h3>
+  </ul>
+</div>
