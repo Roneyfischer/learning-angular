@@ -14,6 +14,7 @@ import { EventsComponent } from './components/events/events.component';
 import { LoginFormComponent } from './components/login-form/login-form.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { PassagemDadosComponent } from './components/passagem-dados/passagem-dados.component';
+import { PipeComponent } from './components/pipe/pipe.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { PassagemDadosComponent } from './components/passagem-dados/passagem-dad
           EventsComponent,
           LoginFormComponent,
           ListRenderComponent,
-          PassagemDadosComponent
+          PassagemDadosComponent,
+          PipeComponent
   ],
   imports: [
     BrowserModule,

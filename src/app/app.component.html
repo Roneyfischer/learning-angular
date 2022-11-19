@@ -58,11 +58,15 @@
 </nav>
 
 <div class="divClass">
-  <p>{{dataTextToShow}} {{dataReceivedShow}} </p>
+  <app-pipe></app-pipe>
 </div>
-<app-passagem-dados (dataOutput) = "dataSendReceived($event)"
-  ></app-passagem-dados
->
+
+<div class="divClass">
+  <p>{{ dataTextToShow }} {{ dataReceivedShow }}</p>
+</div>
+<app-passagem-dados
+  (dataOutput)="dataSendReceived($event)"
+></app-passagem-dados>
 
 <br />
 <br />
