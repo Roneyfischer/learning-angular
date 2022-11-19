@@ -1,0 +1,14 @@
+<form>
+  <input
+    type="text"
+    [(ngModel)]="name"
+    name="name"
+    placeholder="Põe seu nome aí"
+  />
+  <p *ngIf="name == ''">O campo acima é obrigatório</p>
+
+  <input type="submit" />
+  <br />
+  <br />
+  <button class="btn btn-primary" (click)="teste()">BOtãaao</button>
+</form>
